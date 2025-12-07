@@ -1,0 +1,121 @@
+Here’s your complete, ready-to-use HTML file with **Apple’s official “Download on the App Store” badge** already linked to your real app:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hear to Listen – A Compassionate Space to Be Heard and Heal</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans flex flex-col min-h-screen">
+
+  <!-- Header / Hero Section -->
+  <header class="flex-none relative px-4 py-10 text-center sm:text-left"
+          style="background-image: url('fern background.png'); background-size: cover; background-position: center;">
+    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+    <div class="relative z-10 flex flex-col sm:flex-row items-center gap-6 max-w-6xl mx-auto">
+
+      <!-- App Icon -->
+      <img src="apple icon heartolisten.png" alt="Hear to Listen Icon"
+           class="w-32 sm:w-48 h-32 sm:h-48 rounded-full shadow-lg border-2 border-white" />
+
+      <!-- Title & CTA -->
+      <div class="flex flex-col items-center sm:items-start justify-center text-white">
+        <h1 class="text-5xl sm:text-6xl font-bold mb-2">Hear to Listen</h1>
+        <p class="text-xl mb-6 text-gray-100 max-w-xl">
+          Someone to Listen, Whenever You Need It.<br>
+          A compassionate space to talk, reflect, and heal — powered by empathetic AI that truly listens.
+        </p>
+
+        <!-- Official Apple App Store Badge (your real link) -->
+        <a href="https://apps.apple.com/us/app/hear-to-listen/id6754344396" target="_blank">
+          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+               alt="Download on the App Store"
+               class="h-12 sm:h-14 hover:opacity-90 transition">
+        </a>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Section -->
+  <main class="flex-1 px-4 py-6 bg-green-50" id="features">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-start gap-8">
+
+      <!-- Video -->
+      <div class="flex-shrink-0 w-full md:w-1/3 mt-6 cursor-pointer" id="videoContainer">
+        <video id="hearVideo" class="w-full rounded-xl shadow-lg border-4 border-green-500">
+          <source src="hear-to-listen.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <p class="text-center text-sm text-gray-600 mt-2">
+          Click the video to play and hear how Hear to Listen can help you find calm.
+        </p>
+      </div>
+
+      <!-- Features -->
+      <div class="flex-1 grid grid-cols-1 gap-6 text-center md:text-left mt-0 md:mt-[-1rem]">
+
+        <h2 class="text-2xl font-semibold text-gray-800 mb-2">
+          A Compassionate Space to Be Heard and Heal
+        </h2>
+
+        <div>
+          <h3 class="text-lg font-semibold text-green-800">Always Here for You</h3>
+          <p class="text-gray-700">
+            Whenever you need to talk — day or night — Hear to Listen is ready.
+            It helps you make sense of your thoughts, find calm, and take small, healthy steps forward.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-semibold text-green-800">100% Private and Secure</h3>
+          <p class="text-gray-700">
+            Your conversations stay between you and the app. Everything is encrypted and confidential,
+            giving you the freedom to be completely honest — without judgement.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-semibold text-green-800">Thoughtful, Human-Like Support</h3>
+          <p class="text-gray-700">
+            Hear to Listen responds with empathy and understanding. It helps you process emotions,
+            gain perspective, and rediscover your balance so you can move forward with greater clarity and confidence.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="flex-none bg-gray-800 text-white py-4 px-4 text-center">
+    <p>© 2025 Hear to Listen. All rights reserved.</p>
+  </footer>
+
+  <!-- Script to play video when clicked -->
+  <script>
+    const video = document.getElementById('hearVideo');
+    const videoContainer = document.getElementById('videoContainer');
+
+    videoContainer.addEventListener('click', () => {
+      if (video.paused) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    });
+  </script>
+
+</body>
+</html>
+```
+
+You’re all done!
+Just upload this file (and your images/video) to your hosting and your landing page is 100% live with the official Apple badge correctly linked to your app (ID 6754344396). 🚀
+
+Let me know if you also want the Google Play badge added later!
+
